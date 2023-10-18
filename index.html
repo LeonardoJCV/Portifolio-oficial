@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">leonardojcv</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">Sobre</a></li>
+          <li><a href="#grid-one">Projetos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#grid-two">Curiosidades</a></li>
+          <li><a href="#pricing">Valores</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Olá, meu nome é Leonardo.</h2>
+        <p>Tenho 23 anos e sou desenvolvedor back-end Java 
+          (Spring) com conhecimentos em banco de 
+          dados relacionais (MySQL/PostgreSQL) e NoSQL (MongoDB),
+          também possuo conhecimentos básicos em outras 
+          linguagens de programação como 
+          Javascript e Python. </p>
+      </div>
+      <div class="intro-img">
+        <img src="./assets/img/eu.jpg" alt="Logo de HTML, CSS e JS.">
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Sobre mim:</h2>
+      <p>Iniciei minha carreira profissional em 2017 como Jovem Aprendiz (Auxiliar de escritório) na EQS Engenharia LTDA no contrato da Caixa Econômica Federal.
+        <br> Em 2019 me tornei Assistente Operacional, dessa vez com contrato Claro Brasil e em 2020 fui promovido a Assistente Administrativo.</p>
+      <p>Em 2021 fui promovido a Supervisor Administrativo no contrato do Tribunal de Justiça do Paraná e
+        em 2023 atuei brevemente como Analista de Suporte N1 para a ConsultLOG/Trimble inc.</p>
+      <p>Atualmente estou trabalhando na Prefeitura de Colombo como Estagiário de Tecnologia da Informação e me formando em Análise e Desenvolvimento de Sistemas.</p>
+    </div>
+  </section>
+
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Projetos em destaque</h2>
+      <p class="grid-description">💻☕</p>
+
+      <div class="grid">
+        <article>
+          <h3><a href="https://github.com/LeonardoJCV/Chess-system">Sistema de Jogo de Xadrez | Java</a></h3>
+          <p>Um sistema de jogo de xadrez player vs player criado 
+            utilizando puramente a linguagem Java (Expressões Lambda, 
+            Orientação a objetos, Matrizes e Listas). 
+            </p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/LeonardoJCV/WebService-SpringBoot-JPA-Hibernate">API Webservice com Spring | Java</a></h3>
+          <p>Projeto para cadastro de usuários, categorias, pedidos e 
+            produtos utilizando a framework Springboot, implementação 
+            do modelo de domínio, estruturação de camadas lógicas 
+            (Resource, Service e Repository), configuração de banco de 
+            dados de teste (H2), povoamente do banco de dados, CRUD, 
+            tratamento de exceções (HttpStatus) e implementação do 
+            banco de dados PostgreSQL. </p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/LeonardoJCV/Springboot-todolist">API TodoList com Spring | Java</a></h3>
+          <p>Projeto (Lista de tarefas) utilizando a framework Springboot, 
+            implementação de webservice de cadastro de atividades, 
+            estruturação de camadas, configuração do banco de dados 
+            (H2), CRUD, tratamento de exceções (HttpStatus), 
+            criptografia de senha/usuário, validação de informações para 
+            registro de tarefas e Deploy. </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Galeria</h2>
+      <p class="grid-description">Um pouco mais sobre mim!👨‍💻</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="./assets/img/img1.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/img2.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/img3.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/img4.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/img5.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/img6.jpeg" alt="random image from unsplash" height="360vh" width="360vh"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Curiosidades</h2>
+      <p class="grid-description">🚀</p>
+
+      <div class="grid">
+        <article>
+          <h3>Religião</h3>
+          <p>Sou umbandista a mais de 7 anos, e em janeiro de 2024 completarei 1 ano de santo no candomblé.</p>
+        </article>
+        <article>
+          <h3>Gostos</h3>
+          <p>Sou apaixonado por astrofotografia e sempre que posso, paro um tempo para admirar o céu estrelado.</p>
+        </article>
+        <article>
+          <h3>Talentos</h3>
+          <p>Sou músico desde os 8 anos de idade, focado principalmente em intrumentos de corda como guitarra, violão, ukulele
+            entre outros.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Valores</h2>
+      <p>💵</p>
+      <p>Tabela de valores para jobs</p>
+
+      <div class="responsive-table">
+        <table>
+          <caption>Ainda não há valores disponíveis</caption>
+
+          <thead>
+            <tr>
+              <th>💵</th>
+              <th>💵</th>
+              <th>💵</th>
+              <th>💵</th>
+              <th>💵</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+            </tr>
+            <tr>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+            </tr>
+            <tr>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+              <td>🏗️</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>🏗️</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Tecnologias</h2>
+        <p>
+          ✓ Java 
+          ✓ Springboot 
+          ✓ JPA/Hibernate/Maven 
+          ✓ MySQL/PostgreSQL/MongoDB 
+          ✓ Git e Github 
+          ✓ Javascript 
+          ✓ Python 
+          ✓ HTML & CSS 
+          ✓ Bootstrap 
+          ✓ Analise de dados & Power BI 
+          ✓ Lean, Scrum & Squads 
+          ✓ Excel Avançado (VBA/Macros) 
+          ✓ Design (CorelDRAW / Figma) 
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Me contate!</legend>
+
+          <div class="form-group">
+            <label for="first-name">Nome</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Nome">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Sobrenome</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Sobrenome">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Enviar mensagem</button>
+          </div>
+        </fieldset>
+      </div>  
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="https://github.com/LeonardoJCV">Feito com <span class="heart">❤</span> por Leonardo Vieira</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
